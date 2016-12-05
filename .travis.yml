@@ -22,10 +22,10 @@ after_success:
   - docker push tokyomotel/alma-server:latest
   
 deploy:
-	provider: releases
-	api_key: $API_KEY_GIT
-	file: README.md
-	skip_cleanup: true
-	on:
-		tags: true
+  provider: releases
+  api_key: $API_KEY_GIT
+  file: README.md
+  skip_cleanup: true
+  on:
+    tags: true
 
